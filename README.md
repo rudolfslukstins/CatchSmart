@@ -1,14 +1,16 @@
 # CatchSmart
 ## **Headhunters**
 
-## **Run project!**
-To run the project you will need a Mircrosoft Visual Studio and  SQLite. 
+## **To run project!**
+
+To run the project you will need a Mircrosoft Visual Studio and SQLite. 
 When the project is opened in Microsoft Visual Studio you should make a migration.
 First write: **add-migration init**
 Then: **update-database**
-The database should be in  C:\Users\**_YOUR USER NAME_**\source\repos\CatchSmart\CatchSmart
-===
+The database should be in C:\Users\_YOUR USER NAME_\source\repos\CatchSmart\CatchSmart
+
 ## **Description**
+
 I made three API Controllers for candidates, companies, and positions.
 For candidate controller: 
 1. Created a method to create a new candidate.
