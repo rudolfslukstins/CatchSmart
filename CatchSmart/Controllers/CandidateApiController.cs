@@ -41,7 +41,6 @@ namespace CatchSmart.Controllers
             if (_candidatesValidator.All(c => c.IsValid(candidate)))
             {
                 var candidatePosition = _candidateService.AddCandidatePositionsPosition(candidate.Id, positionId);
-                _candidatePositionService.Create(candidatePosition);
                 return Created("", candidatePosition);
             }
 

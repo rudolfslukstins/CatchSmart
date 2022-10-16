@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CatchSmart.Tests
 {
     [TestClass]
-    public class CompanyTests
+    public class CompanyValidatorTests
     {
         private Company _company;
         private ICompanyValidator _validator;

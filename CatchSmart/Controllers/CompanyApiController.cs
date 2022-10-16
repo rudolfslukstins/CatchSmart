@@ -31,7 +31,6 @@ namespace CatchSmart.Controllers
         public IActionResult PutCompany(string name)
         {
             var company = _companyService.AddCompany(name);
-            _companyService.Create(company);
 
             return Created("", company);
         }
@@ -47,10 +46,9 @@ namespace CatchSmart.Controllers
             if (_companyValidator.All(c => c.IsValid(company)))
             {
                 company.OpenPositions++;
-
                 _positionService.Create(newPosition);
                 var companiesPositions = _companyService.AddPosition(company.Id, newPosition.Id);
-                _companiesPositionService.Create(companiesPositions);
+                Created("", companiesPositions);
 
                 return Created("", newPosition);
             }

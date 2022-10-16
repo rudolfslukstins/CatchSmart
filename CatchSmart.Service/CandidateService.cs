@@ -24,7 +24,8 @@ namespace CatchSmart.Service
                 CandidateId = candidateId,
                 PositionId = positionId,
             };
-
+            Create(candidatePositions);
+            
             return candidatePositions;
         }
 
@@ -38,6 +39,7 @@ namespace CatchSmart.Service
                 SkillSets = skillSet,
             };
             Create(candidate);
+            
             return candidate;
         }
 

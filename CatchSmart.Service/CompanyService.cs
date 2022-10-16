@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Runtime.CompilerServices;
 using CatchSmart.Core.Models;
 using CatchSmart.Core.Services;
 using CatchSmart.Db;
@@ -22,7 +23,7 @@ namespace CatchSmart.Service
             {
                 CompanyName = name,
             };
-
+            Create(company);
             return company;
         }
 
@@ -33,6 +34,7 @@ namespace CatchSmart.Service
                 CompanyId = companiesId,
                 PositionId = positionId,
             };
+            Create(companyPositions);
 
             return companyPositions;
         }
