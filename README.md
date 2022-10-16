@@ -2,7 +2,6 @@
 ## **Headhunters**
 
 ## **Run project!**
-===
 To run the project you will need a Mircrosoft Visual Studio and  SQLite. 
 When the project is opened in Microsoft Visual Studio you should make a migration.
 First write: **add-migration init**
