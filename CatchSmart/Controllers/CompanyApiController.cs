@@ -47,8 +47,7 @@ namespace CatchSmart.Controllers
             {
                 company.OpenPositions++;
                 _positionService.Create(newPosition);
-                var companiesPositions = _companyService.AddPosition(company.Id, newPosition.Id);
-                Created("", companiesPositions);
+                _companyService.AddPosition(company.Id, newPosition.Id);
 
                 return Created("", newPosition);
             }
